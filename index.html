@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>My Website - NAND KISHORE</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="header">
         <nav>
@@ -29,35 +31,48 @@
                 <img src="images/my.jpg">
             </div>
             <div class="right-col">
-                <h1>I'm Nand Kishore <br> Website Developer</h1>
+                <h1>I'm <span class="auto-input"></span></h1>
                 <p>I have been in website development industry from past 5 years and have worked with more than twenty clients across the country.</p>
-                
+
                 <div class="social-media">
                     <div class="icon">
                         <img src="images/facebook.png">
                         <a href="https://www.facebook.com/nand.kishore.79230/">
-                        <img src="images/link.png"></a>
+                            <img src="images/link.png"></a>
                     </div>
                     <div class="icon">
                         <img src="images/twitter.png">
                         <a href="https://twitter.com/NandKis74873621">
-                        <img src="images/link.png"></a>
+                            <img src="images/link.png"></a>
                     </div>
                     <div class="icon">
                         <img src="images/youtube.png">
                         <a href="https://www.youtube.com/channel/UCRYItFW93_gNejyTTj-XnhA">
-                        <img src="images/link.png"></a>
+                            <img src="images/link.png"></a>
                     </div>
                     <div class="icon">
                         <img src="images/instagram.png">
                         <a href="https://www.instagram.com/_.nandu_k/">
-                        <img src="images/link.png"></a>
+                            <img src="images/link.png"></a>
                     </div>
                 </div>
             </div>
         </div>
 
     </div>
-    
+
+    <!-- custom js file link -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        // typed script
+        var typed = new Typed(".auto-input", {
+            strings: ["Nand Kishore", "Full-stack </br> Web Developer", "Competitive programmer", "&star;&star; Codechef", "Hacker"],
+            typeSpeed: 90,
+            backSpeed: 100,
+            loop: true
+        });
+    </script>
+
 </body>
+
 </html>
