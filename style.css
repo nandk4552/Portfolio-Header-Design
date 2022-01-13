@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .header {
     min-height: 100vh;
     width: 100%;
@@ -29,19 +33,43 @@ nav {
     font-weight: bold;
     padding-top: 10px;
     padding-left: 10%;
+    padding: 10%;
+    background: transparent;
+}
+
+.logo:hover {
+    color: yellow !important;
 }
 
 .nav-links {
-    text-align: right;
-    background: #ff1616;
-    padding: 10px 30px;
-    border-bottom-left-radius: 18px;
+    background: #ff1616 !important;
+    padding: 5px !important;
+}
+
+nav .navbar:hover {
+    background: #000;
+}
+
+.nav-links ul li a:hover {
+    color: yellow !important;
 }
 
 .nav-links ul li {
     list-style-type: none;
     display: inline-block;
     padding: 10px 25px;
+}
+
+.navbar-nav .nav-item .nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-nav ul li a {
+    display: flex !important;
+    /* align-items: flex-end !important; */
+    align-items: right;
 }
 
 .nav-links ul li a {
@@ -141,4 +169,21 @@ nav {
 
 .icon a:hover {
     opacity: 1;
+}
+
+@media (max-width:660px) {
+    body {
+        overflow-x: hidden !important;
+    }
+    .left-sidebar {
+        /* width: 20px !important; */
+        display: none;
+    }
+    .nav-links {
+        text-align: right;
+        padding: 5px 10px;
+    }
+    .navbar-toggler {
+        color: #000 !important;
+    }
 }
